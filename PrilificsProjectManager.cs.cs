@@ -6,12 +6,12 @@ public class PrilificsProjectManager
     public static void Main(string[]args)
     {
         Console.WriteLine("Hello from the console PPM");
-        Console.WriteLine("1 Add Project");
-        Console.WriteLine("2 View Projects");
-        Console.WriteLine("3 Add Employee");
-        Console.WriteLine("4 View Employees");
-        Console.WriteLine("5 Add Role");
-        Console.WriteLine("6 View Roles");
+        Console.WriteLine("Enter 1 to Add Project");
+        Console.WriteLine("Enter 2 to View Projects");
+        Console.WriteLine("Enter 3 to Add Employee");
+        Console.WriteLine("Enter 4 to View Employees");
+        Console.WriteLine("Enter 5 to Add Role");
+        Console.WriteLine("Enter 6 to View Roles");
         Console.WriteLine("Enter 'S' to exit the application");
 
         var userInput = Console.ReadLine();
