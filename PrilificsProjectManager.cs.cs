@@ -64,7 +64,7 @@ public class PrilificsProjectManager
                     return;
 
                 default:
-                    Console.WriteLine("Select valid Operation");
+                    Console.WriteLine("Select Valid Operation");
                     break;
             }   
 
@@ -73,6 +73,7 @@ public class PrilificsProjectManager
         }
     }
 }
+
 public class Project
 {
     public string ProjectName { get; set; }
@@ -87,14 +88,17 @@ public class Project
 public class ProjectManagement
 {
     List<Project> Projects = new List<Project>();
+    
     public void AddProject(Project project)
     {
         Projects.Add(project);
     }
+    
      public void displayProject(Project project)
     {
         Console.WriteLine("[" + project.ProjectName + "]");
     }
+    
     public void ViewProject()
     {
         foreach (var i in Projects)
@@ -103,6 +107,7 @@ public class ProjectManagement
         }
     }
 }
+
 public class Employee
 {
     public string EmployeeName { get; set; }
@@ -112,17 +117,21 @@ public class Employee
         EmployeeName = employeename;
     }
 }
+
 public class EmployeeManagement
 {
     List<Employee> Employees = new List<Employee>();
+    
     public void AddEmployee(Employee employee)
     {
         Employees.Add(employee);
     }
+    
      public void displayEmployee(Employee employee)
     {
         Console.WriteLine("[" + employee.EmployeeName + "]");
     }
+    
     public void ViewEmployee()
     {
         foreach (var i in Employees)
@@ -131,6 +140,7 @@ public class EmployeeManagement
         }
     }
 }
+
 public class Role
 {
     public string RoleName { get; set; }
@@ -140,17 +150,21 @@ public class Role
         RoleName = rolename;
     }
 }
+
 public class RoleManagement
 {
     List<Role> Roles = new List<Role>();
+    
     public void AddRole(Role role)
     {
         Roles.Add(role);
     }
+    
      public void displayRole(Role role)
     {
         Console.WriteLine("[" + role.RoleName + "]");
     }
+    
     public void ViewRole()
     {
         foreach (var i in Roles)
