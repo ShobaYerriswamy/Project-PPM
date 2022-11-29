@@ -1,5 +1,104 @@
 using System;
 
+public class Project
+{
+    public string ProjectName { get; set; }
+
+    public Project(string projectname)
+    {
+        ProjectName = projectname;
+    } 
+}
+
+public class ProjectManager
+{
+    List<Project> Projects = new List<Project>();
+    
+    public void AddProject(Project project)
+    {
+        Projects.Add(project);
+    }
+    
+     public void displayAllProjects(Project project)
+    {
+        Console.WriteLine("[" + project.ProjectName + "]");
+    }
+    
+    public void ViewProject()
+    {
+        foreach (var i in Projects)
+        {
+            displayAllProjects(i);
+        }
+    }
+}
+
+public class Employee
+{
+    public string EmployeeName { get; set; }
+
+    public Employee(string employeename)
+    {
+        EmployeeName = employeename;
+    }
+}
+
+public class EmployeeManager
+{
+    List<Employee> Employees = new List<Employee>();
+    
+    public void AddEmployee(Employee employee)
+    {
+        Employees.Add(employee);
+    }
+    
+     public void displayAllEmployees(Employee employee)
+    {
+        Console.WriteLine("[" + employee.EmployeeName + "]");
+    }
+    
+    public void ViewEmployee()
+    {
+        foreach (var i in Employees)
+        {
+            displayAllEmployees(i);
+        }
+    }
+}
+
+public class Role
+{
+    public string RoleName { get; set; }
+
+    public Role(string rolename)
+    {
+        RoleName = rolename;
+    }
+}
+
+public class RoleManager
+{
+    List<Role> Roles = new List<Role>();
+    
+    public void AddRole(Role role)
+    {
+        Roles.Add(role);
+    }
+    
+     public void displayAllRoles(Role role)
+    {
+        Console.WriteLine("[" + role.RoleName + "]");
+    }
+    
+    public void ViewRole()
+    {
+        foreach (var i in Roles)
+        {
+            displayAllRoles(i);
+        }
+    }
+}
+
 public class PrilificsProjectManager
 {
 
@@ -70,103 +169,6 @@ public class PrilificsProjectManager
 
             Console.WriteLine("Select Operation");
             userInput = Console.ReadLine();
-        }
-    }
-}
-
-public class Project
-{
-    public string ProjectName { get; set; }
-
-    public Project(string projectname)
-    {
-        ProjectName = projectname;
-    } 
-}
-
-public class ProjectManager
-{
-    List<Project> Projects = new List<Project>();
-    
-    public void AddProject(Project project)
-    {
-        Projects.Add(project);
-    }
-    
-     public void displayAllProjects(Project project)
-    {
-        Console.WriteLine("[" + project.ProjectName + "]");
-    }
-    
-    public void ViewProject()
-    {
-        foreach (var i in Projects)
-        {
-            displayAllProjects(i);
-        }
-    }
-}
-public class Employee
-{
-    public string EmployeeName { get; set; }
-
-    public Employee(string employeename)
-    {
-        EmployeeName = employeename;
-    }
-}
-
-public class EmployeeManager
-{
-    List<Employee> Employees = new List<Employee>();
-    
-    public void AddEmployee(Employee employee)
-    {
-        Employees.Add(employee);
-    }
-     public void displayAllEmployees(Employee employee)
-    {
-        Console.WriteLine("[" + employee.EmployeeName + "]");
-    }
-    
-    public void ViewEmployee()
-    {
-        foreach (var i in Employees)
-        {
-            displayAllEmployees(i);
-        }
-    }
-}
-
-public class Role
-{
-    public string RoleName { get; set; }
-
-    public Role(string rolename)
-    {
-        RoleName = rolename;
-    }
-}
-
-public class RoleManager
-{
-    List<Role> Roles = new List<Role>();
-    
-    public void AddRole(Role role)
-    {
-        Roles.Add(role);
-    }
-    
-     public void displayAllRoles(Role role)
-    {
-        Console.WriteLine("[" + role.RoleName + "]");
-    }
-    
-    public void ViewRole()
-    {
-        foreach (var i in Roles)
-        {
-            displayAllRoles(i);
         }
     }
 }
