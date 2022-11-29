@@ -12,7 +12,7 @@ public class PrilificsProjectManager
         Console.WriteLine("Enter 4 to View Employees");
         Console.WriteLine("Enter 5 to Add Role");
         Console.WriteLine("Enter 6 to View Roles");
-        Console.WriteLine("Enter 'S' to exit the application");
+        Console.WriteLine("Enter 'S' to QUIT the application");
 
         var userInput = Console.ReadLine();
             
