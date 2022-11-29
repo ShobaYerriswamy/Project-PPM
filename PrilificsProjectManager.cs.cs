@@ -29,7 +29,7 @@ public class PrilificsProjectManager
                     var add = Console.ReadLine();
                     var newProject = new Project(add);
                     PM.AddProject(newProject);
-                    Console.WriteLine("Added Successfully!");
+                    Console.WriteLine("Project Added Successfully!");
                     break;
                 
                 case "2":
@@ -41,7 +41,7 @@ public class PrilificsProjectManager
                     var add1 = Console.ReadLine();
                     var newEmployee = new Employee(add1);
                     EM.AddEmployee(newEmployee);
-                    Console.WriteLine("Added Successfully!");
+                    Console.WriteLine("Employee Added Successfully!");
                     break;
                 
                 case "4":
@@ -53,7 +53,7 @@ public class PrilificsProjectManager
                     var add2 = Console.ReadLine();
                     var newRole = new Role(add2);
                     RM.AddRole(newRole);
-                    Console.WriteLine("Added Successfully!");
+                    Console.WriteLine("Role Added Successfully!");
                     break;
                   
                 case "6":
@@ -81,9 +81,7 @@ public class Project
     public Project(string projectname)
     {
         ProjectName = projectname;
-    }
-
-    
+    }    
 }
 
 public class ProjectManagement
@@ -93,7 +91,6 @@ public class ProjectManagement
     public void AddProject(Project project)
     {
         Projects.Add(project);
-    }
     
      public void displayProject(Project project)
     {
@@ -108,7 +105,7 @@ public class ProjectManagement
         }
     }
 }
-
+    
 public class Employee
 {
     public string EmployeeName { get; set; }
@@ -118,6 +115,7 @@ public class Employee
         EmployeeName = employeename;
     }
 }
+    
 public class EmployeeManagement
 {
     List<Employee> Employees = new List<Employee>();
@@ -140,7 +138,7 @@ public class EmployeeManagement
         }
     }
 }
-
+    
 public class Role
 {
     public string RoleName { get; set; }
@@ -150,7 +148,7 @@ public class Role
         RoleName = rolename;
     }
 }
-
+    
 public class RoleManagement
 {
     List<Role> Roles = new List<Role>();
@@ -173,6 +171,8 @@ public class RoleManagement
         }
     }
 }
+
+
 
 
 
