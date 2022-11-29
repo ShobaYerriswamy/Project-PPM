@@ -16,9 +16,9 @@ public class PrilificsProjectManager
 
         var userInput = Console.ReadLine();
             
-        ProjectManagement obj =  new ProjectManagement();
-        EmployeeManagement obj1 = new EmployeeManagement();
-        RoleManagement obj2 = new RoleManagement();
+        ProjectManagement PM =  new ProjectManagement();
+        EmployeeManagement EM = new EmployeeManagement();
+        RoleManagement RM = new RoleManagement();
 
         while (true)
         {
@@ -28,43 +28,43 @@ public class PrilificsProjectManager
                     Console.WriteLine("Enter the Project Name");
                     var add = Console.ReadLine();
                     var newProject = new Project(add);
-                    obj.AddProject(newProject);
+                    PM.AddProject(newProject);
                     Console.WriteLine("Added Successfully!");
                     break;
                 
                 case "2":
-                    obj.ViewProject();
+                    PM.ViewProject();
                     break;
 
                 case "3":
                     Console.WriteLine("Enter the Employee Name");
                     var add1 = Console.ReadLine();
                     var newEmployee = new Employee(add1);
-                    obj1.AddEmployee(newEmployee);
+                    EM.AddEmployee(newEmployee);
                     Console.WriteLine("Added Successfully!");
                     break;
                 
                 case "4":
-                    obj1.ViewEmployee();
+                    EM.ViewEmployee();
                     break;
 
                 case "5":
                     Console.WriteLine("Enter the Role Name");
                     var add2 = Console.ReadLine();
                     var newRole = new Role(add2);
-                    obj2.AddRole(newRole);
+                    RM.AddRole(newRole);
                     Console.WriteLine("Added Successfully!");
                     break;
                   
                 case "6":
-                    obj2.ViewRole();
+                    RM.ViewRole();
                     break;
                     
                 case "S":
                     return;
 
                 default:
-                    Console.WriteLine("Select Valid Operation");
+                    Console.WriteLine("Select valid Operation");
                     break;
             }   
 
@@ -75,7 +75,7 @@ public class PrilificsProjectManager
 }
 public class Project
 {
-    public string ProjectName { get; set; } 
+    public string ProjectName { get; set; }
 
     public Project(string projectname)
     {
