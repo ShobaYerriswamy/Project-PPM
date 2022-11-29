@@ -16,9 +16,9 @@ public class PrilificsProjectManager
 
         var userInput = Console.ReadLine();
             
-        ProjectManagement PM =  new ProjectManagement();
-        EmployeeManagement EM = new EmployeeManagement();
-        RoleManagement RM = new RoleManagement();
+        ProjectManager PM =  new ProjectManager();
+        EmployeeManager EM = new EmployeeManager();
+        RoleManager RM = new RoleManager();
 
         while (true)
         {
@@ -81,16 +81,17 @@ public class Project
     public Project(string projectname)
     {
         ProjectName = projectname;
-    }    
+    }   
 }
 
-public class ProjectManagement
+public class ProjectManager
 {
     List<Project> Projects = new List<Project>();
     
     public void AddProject(Project project)
     {
         Projects.Add(project);
+    }
     
      public void displayProject(Project project)
     {
@@ -105,7 +106,7 @@ public class ProjectManagement
         }
     }
 }
-    
+
 public class Employee
 {
     public string EmployeeName { get; set; }
@@ -115,8 +116,8 @@ public class Employee
         EmployeeName = employeename;
     }
 }
-    
-public class EmployeeManagement
+
+public class EmployeeManager
 {
     List<Employee> Employees = new List<Employee>();
     
@@ -138,7 +139,7 @@ public class EmployeeManagement
         }
     }
 }
-    
+
 public class Role
 {
     public string RoleName { get; set; }
@@ -148,8 +149,8 @@ public class Role
         RoleName = rolename;
     }
 }
-    
-public class RoleManagement
+
+public class RoleManager
 {
     List<Role> Roles = new List<Role>();
     
@@ -171,8 +172,3 @@ public class RoleManagement
         }
     }
 }
-
-
-
-
-
