@@ -7,7 +7,7 @@ public class Project
     public Project(string projectname)
     {
         ProjectName = projectname;
-    } 
+    }
 }
 
 public class ProjectManager
@@ -19,7 +19,7 @@ public class ProjectManager
         Projects.Add(project);
     }
     
-     public void displayProject(Project project)
+    public void displayAllProjects(Project project)
     {
         Console.WriteLine("[" + project.ProjectName + "]");
     }
@@ -28,7 +28,7 @@ public class ProjectManager
     {
         foreach (var i in Projects)
         {
-            displayProject(i);
+            displayAllProjects(i);
         }
     }
 }
@@ -52,7 +52,7 @@ public class EmployeeManager
         Employees.Add(employee);
     }
     
-     public void displayEmployee(Employee employee)
+     public void displayAllEmployees(Employee employee)
     {
         Console.WriteLine("[" + employee.EmployeeName + "]");
     }
@@ -61,7 +61,7 @@ public class EmployeeManager
     {
         foreach (var i in Employees)
         {
-            displayEmployee(i);
+            displayAllEmployees(i);
         }
     }
 }
@@ -85,7 +85,7 @@ public class RoleManager
         Roles.Add(role);
     }
     
-     public void displayRole(Role role)
+     public void displayAllRoles(Role role)
     {
         Console.WriteLine("[" + role.RoleName + "]");
     }
@@ -94,7 +94,7 @@ public class RoleManager
     {
         foreach (var i in Roles)
         {
-            displayRole(i);
+            displayAllRoles(i);
         }
     }
 }
