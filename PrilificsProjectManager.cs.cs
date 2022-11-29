@@ -64,7 +64,7 @@ public class PrilificsProjectManager
                     return;
 
                 default:
-                    Console.WriteLine("Select valid Operation");
+                    Console.WriteLine("Select Valid Operation");
                     break;
             }   
 
