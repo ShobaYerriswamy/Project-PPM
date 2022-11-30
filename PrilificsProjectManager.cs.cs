@@ -99,7 +99,7 @@ public class RoleManager
     }
 }
 
-public class PrilificsProjectManager
+public class ProlificsProjectManager
 {
 
     public static void Main(string[]args)
